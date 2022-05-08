@@ -1,0 +1,93 @@
+{
+  "main": {
+    "id": "2e7905242645e768",
+    "type": "split",
+    "children": [
+      {
+        "id": "6a657265f64f68ff",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "description/winner_of_election.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "d9c604f6c14ddb48",
+    "type": "split",
+    "children": [
+      {
+        "id": "86db3d46c9587fec",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "47b9a69cf12bc89d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "9425f091026441c3",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "96d40b1a4574b5eb",
+    "type": "split",
+    "children": [
+      {
+        "id": "0c9c3c85cb90240b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9ad529cdf2936ed1",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "description/winner_of_election.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "6a657265f64f68ff",
+  "lastOpenFiles": [
+    "description/winner_of_election.md"
+  ]
+}
