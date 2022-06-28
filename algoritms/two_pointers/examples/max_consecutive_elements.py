@@ -15,6 +15,6 @@ def max_consecutive_elements(array_str: str) -> int:
     return result
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     array_str: str = 'aasserwsafffdsdff dssdffeww'
     print(max_consecutive_elements(array_str))

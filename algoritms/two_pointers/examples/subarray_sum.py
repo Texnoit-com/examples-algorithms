@@ -17,7 +17,7 @@ def subarray_sum(array: int, x: int) -> bool:
     return False
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     array: int = [5, 7, 9, 12, 15, 18, 19, 20, 22]
     x: int = 57
     print(subarray_sum(array, x))
