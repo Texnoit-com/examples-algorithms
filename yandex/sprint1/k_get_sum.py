@@ -12,5 +12,5 @@ def read_input() -> Tuple[List[int], int]:
     k = int(input())
     return number_list, k
 
-number_list, k = read_input()
-print(" ".join(map(str, get_sum(number_list, k))))
+#number_list, k = read_input()
+#print(" ".join(map(str, get_sum(number_list, k))))

@@ -17,5 +17,5 @@ def factorize(number: int) -> List[int]:
         arr.append(number)
     return arr
 
-result = factorize(int(input()))
-print(" ".join(map(str, result)))
+#result = factorize(int(input()))
+#print(" ".join(map(str, result)))

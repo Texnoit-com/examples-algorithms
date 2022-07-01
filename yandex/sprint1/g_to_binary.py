@@ -12,4 +12,4 @@ def to_binary(number: int) -> str:
 def read_input() -> int:
     return int(input().strip())
 
-print(to_binary(read_input()))
+#print(to_binary(read_input()))

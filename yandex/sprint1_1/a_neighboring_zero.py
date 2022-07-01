@@ -9,7 +9,7 @@ from typing import List
 
 
 def neighboring_zero(home: List[int]) -> List[int]:
-    length = len(home)
+    length: int = len(home)
     zero_left: int = home.index(0)
     for index in range(length):
         if home[index] == 0:
@@ -29,9 +29,9 @@ def neighboring_zero(home: List[int]) -> List[int]:
 
 
 def read_input() -> List[int]:
-    n = int(input())
+    n: int = int(input())
     home = list(map(int, input().strip().split()))
     return home
 
-home = read_input()
-print(" ".join(map(str, neighboring_zero(home))))
+#home = read_input()
+#print(" ".join(map(str, neighboring_zero(home))))

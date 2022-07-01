@@ -8,5 +8,5 @@ y = ax2 + bx + c. Напишите программу, которая будет
 def evaluate_function(a: int, b: int, c: int, x: int) -> int:
     return a*x*x+b*x+c
 
-a, x, b, c = map(int, input().strip().split())
-print(evaluate_function(a, b, c, x))
+#a, x, b, c = map(int, input().strip().split())
+#print(evaluate_function(a, b, c, x))

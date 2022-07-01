@@ -16,5 +16,3 @@ def is_palindrome(line: str) -> bool:
         return False
 
 #print(is_palindrome(input().strip()))
-assert (is_palindrome('A man, a plan, a canal: Panama')) == True
-assert (is_palindrome('e.')) == True

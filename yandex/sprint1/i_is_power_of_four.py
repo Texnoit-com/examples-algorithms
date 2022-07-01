@@ -13,4 +13,4 @@ def is_power_of_four(number: int) -> bool:
         else:
             return False
 
-print(is_power_of_four(int(input())))
+#print(is_power_of_four(int(input())))

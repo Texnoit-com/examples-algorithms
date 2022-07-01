@@ -18,5 +18,5 @@ def read_input() -> Tuple[str, str]:
     longer = input().strip()
     return shorter, longer
 
-shorter, longer = read_input()
-print(get_excessive_letter(shorter, longer))
+#shorter, longer = read_input()
+#print(get_excessive_letter(shorter, longer))

@@ -14,4 +14,4 @@ def print_result(result: str) -> None:
     print(result)
     print(len(result))
 
-print_result(get_longest_word(read_input()))
+#print_result(get_longest_word(read_input()))
