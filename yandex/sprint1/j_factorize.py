@@ -7,7 +7,6 @@ from typing import List
 
 
 def factorize(number: int) -> List[int]:
-    index: int = 1
     arr: list = []
     for i in range(2, int(math.sqrt(number))+1):
         while number % i == 0:
@@ -17,5 +16,7 @@ def factorize(number: int) -> List[int]:
         arr.append(number)
     return arr
 
-#result = factorize(int(input()))
-#print(" ".join(map(str, result)))
+
+if __name__ == '__main__':
+    result = factorize(int(input()))
+    print(" ".join(map(str, result)))

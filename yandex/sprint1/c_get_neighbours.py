@@ -22,15 +22,16 @@ def get_neighbours(matrix: List[List[int]], row: int, col: int) -> List[int]:
 
 
 def read_input() -> Tuple[List[List[int]], int, int]:
-    n = int(input())
-    m = int(input())
+    length = int(input())
+    input()
     matrix = []
-    for i in range(n):
+    for i in range(length):
         matrix.append(list(map(int, input().strip().split())))
     row = int(input())
     col = int(input())
     return matrix, row, col
 
 
-#matrix, row, col = read_input()
-#print(" ".join(map(str, get_neighbours(matrix, row, col))))
+if __name__ == '__main__':
+    matrix, row, col = read_input()
+    print(" ".join(map(str, get_neighbours(matrix, row, col))))

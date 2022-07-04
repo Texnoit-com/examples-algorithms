@@ -1,35 +1,35 @@
 '''Тренажёр для скоростной печати
 
 Проверка решения
-ID = 69249752'''
+ID = 69268391'''
 
 
 from collections import Counter
 from typing import List, Tuple
 
+SIZE_FIELD = 4
 
-def sleight_hand(line: List[str], k: int) -> int:
-    amount = Counter()
+
+def sleight_hand(line: str, k: int) -> int:
+    '''Подсчет очков в игре Ловкость рук.'''
+    amount = Counter(line)
     score: int = 0
-    for i in range(len(line)):
-        line[i]=line[i].replace('.', '')
-        amount += Counter(line[i])
     for value in amount.values():
         if value <= 2*k:
             score += 1
     return score
 
-def read_input() -> Tuple[List[str], int]:
+
+def read_input(size_field: int = SIZE_FIELD) -> Tuple[List[str], int]:
+    '''Реализация ввода данных'''
     k: int = int(input())
     line: list = []
-    for i in range(4):
-        line.append(input())
-    return line, k
+    for i in range(size_field):
+        line.append(input().replace('.', ''))
+    sleight: str = ''.join(line)
+    return sleight, k
 
-#line, k = read_input()
-#print(sleight_hand(line, k))
 
-assert(sleight_hand(['1231','2..2', '2..2', '2..2'], 3)) == 2
-assert(sleight_hand(['1111','9999', '1111', '9911'], 4)) == 1
-assert(sleight_hand(['1111','1111', '1111', '1111'], 4)) == 0
-assert(sleight_hand(['....','....', '....', '....'], 4)) == 0
+if __name__ == '__main__':
+    line, k = read_input()
+    print(sleight_hand(line, k))

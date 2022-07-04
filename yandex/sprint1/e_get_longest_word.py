@@ -1,5 +1,6 @@
 '''Берётся случайное предложение из текста и в нём ищется самое длинное слово'''
 
+
 def get_longest_word(line: str) -> str:
     arr: list = line.strip().split()
     return max(arr, key=len)
@@ -10,8 +11,11 @@ def read_input() -> str:
     line = input().strip()
     return line
 
+
 def print_result(result: str) -> None:
     print(result)
     print(len(result))
 
-#print_result(get_longest_word(read_input()))
+
+if __name__ == '__main__':
+    print_result(get_longest_word(read_input()))

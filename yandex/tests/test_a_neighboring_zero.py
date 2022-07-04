@@ -1,14 +1,9 @@
-'''Запуск тестов с захватом ввода вывода 
-   pytest --capture=sys'''
-
-from sprint1.a_evaluate_function import evaluate_function
+from sprint1_1.a_neighboring_zero import neighboring_zero
 
 
-def test_on_range(capsys):
-    assert evaluate_function(a=0, x=5, b=8, c=0) == 40
-    assert evaluate_function(a=0, x=5, b=0, c=0) == 0
-    assert evaluate_function(a=1, x=1, b=1, c=1) == 3
-    assert evaluate_function(a=8, x=2, b=9, c=-10) == 40
-    assert evaluate_function(a=-8, x=-5, b=-2, c=7) == -183
-    assert evaluate_function(a=9, x=-6, b=-4, c=0) == 348
-    assert evaluate_function(a=-109, x=-968, b=265, c=-933) == -102393069
+def test_on_range():
+    assert(neighboring_zero([0, 1, 4, 9, 0])) == [0, 1, 2, 1, 0]
+    assert(neighboring_zero([0, 7, 9, 4, 8, 20])) == [0, 1, 2, 3, 4, 5]
+    assert(neighboring_zero([5, 8, 9, 12, 15, 26, 30, 0, 0, 55, 0, 0, 67, 0, 76, 80, 82, 0, 0, 98])) == [7, 6, 5, 4, 3, 2, 1, 0, 0, 1, 0, 0, 1, 0, 1, 2, 1, 0, 0, 1]
+
+
