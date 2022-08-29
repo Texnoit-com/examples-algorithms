@@ -13,5 +13,5 @@ class АgeGroups(Enum):
     SENTENARIANS = (90, 150)
 
 
-maxim_age = АgeGroups.MATURE_AGE_2 
+maxim_age = АgeGroups.MATURE_AGE_2
 print(maxim_age.value)
